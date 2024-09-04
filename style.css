@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.weather-search {
+    margin-bottom: 20px;
+}
+
+#location-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+#get-weather-btn, #get-location-weather-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+#city-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.error-message {
+    color: #ff4c4c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#toggle-dark-mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    background-image: url('dark.jpg'); /* Dark mode background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container.dark-mode {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker container background */
+}
